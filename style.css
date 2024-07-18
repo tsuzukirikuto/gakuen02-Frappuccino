@@ -7,13 +7,16 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    width: 100%;
     z-index: -1;
-    
+
 }
 body {
     background-color:whitesmoke;
+    text-align: center;
 }
+
+
+
 .cafe{position: absolute;
         top:50%;
         left:50%;
@@ -32,7 +35,7 @@ a.btn_02 {
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
-	width: 120px;
+	width: 200px;
 	margin: auto;
 	padding: 1rem 4rem;
 	font-weight: bold;
@@ -55,7 +58,7 @@ a.btn_02:hover {
 
 
 
-h1 {
+h4 {
     color: chocolate;
     font-size: 50px;
     font-family: "Noto Serif JP", serif;
@@ -64,61 +67,202 @@ h1 {
     font-style: normal;
 }
 
-h2 {
+h5 {
   font-family: "Noto Serif JP", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  font-size: 50px;
+  
 }
 
-li {
+h6 {
   font-family: "Noto Serif JP", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  font-size: 30px;
+  
 }
 
-h3 {
-    font-family: "Klee One", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 180%;
+.yotei {
+    width: 1300px;
 }
-      
-/* <style type="text/css">
-/*=== 画像の表示エリア ================================= */
-/* .slide {
+iframe {
+    width: 1100px;
+}
+
+
+
+
+/* ここに CSS のコードを書きましょう */
+ 
+.yuuki{
+    position: relative; /* 今の位置を基準 */
+    top: -440px; /* 上から10px */
+    left: 750px; /* 左から20px */
+    font-size: 1000%;
+    }
+.tyuumonn-button{
+    width: 500px;
+    height: 90px;
+}
+ 
+ul {
+    display: flex;
+    text-align: center;
+  }
+ 
+ 
+ 
+/* twitter画像をホバーした */
+img.twitter_button:hover{
+ 
+    /* 透明度を上げることで、画像の色を薄く見せる。*/
+    opacity:0.5;
+ 
+    /* リンクをホバーしたときのカーソルにする。*/
+    cursor: pointer;
+}
+ 
+/* twitter画像をクリックした瞬間 */
+img.twitter_button:active{
+ 
+    /* 要素を若干下に下げることで、押した感じを出す。*/
+ 
+    /* 今いる位置から相対的に3px下に配置する。*/
+    position: relative;
+    top: 15px;
+ 
+}
+ 
+.price{
+    font-size:20px;
+    font-weight: bold;
+}
+ 
+div{
+    margin: 30px;
+}
+ 
+ 
+ 
+ 
+ /*=== 画像の表示エリア ================================= */
+.slide {
   position   : relative;
   overflow   : hidden;
                     /* 画像のサイズに合わせて変更ください */
-  /* width      : 200px;
-  height     : 200px;
-  margin     : auto;      サンプルは中央寄せの背景：白 */
-  /* background : #fff; */
-/* } */
+  width      : 1000px;
+  height     : 500px;
+  margin     : auto;      /* サンプルは中央寄せの背景：白 */
+  background : #fff;
+}
  
  /*=== 画像の設定 ======================================= */
-/* .slide img {
+.slide img {
   display    : block;
   position   : absolute;
-                      画像のサイズを表示エリアに合せる
+                      /* 画像のサイズを表示エリアに合せる */
   width      : inherit;
   height     : inherit;
   opacity    : 0;
-  animation  : slideAnime 21s ease infinite; */
-/* } */
+  animation  : slideAnime 20s ease infinite;
+}
  
  /*=== スライドのアニメーションを段差で開始する ========= */
-/* .slide img:nth-of-type(1) { animation-delay: 0s } */
-/* .slide img:nth-of-type(2) { animation-delay: 7s } */
-/* .slide img:nth-of-type(3) { animation-delay: 14s } */
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 4s }
+.slide img:nth-of-type(3) { animation-delay: 8s }
+.slide img:nth-of-type(4) { animation-delay: 12s }
+.slide img:nth-of-type(5) { animation-delay: 16s }
  
  /*=== スライドのアニメーション ========================= */
-/* @keyframes slideAnime{
+@keyframes slideAnime{
    0% { opacity: 0 }
-   5% { opacity: 1 }
-  28% { opacity: 1 }
-  33% { opacity: 0 }
+   1% { opacity: 1 }
+  20% { opacity: 1 }
+  21% { opacity: 0 }
  100% { opacity: 0 }
-} */
-/* </style> */  
+}
+ 
+ 
+ 
+/*矢印の設定*/
+ 
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 100%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 60px;
+    width: 60px;
+}
+ 
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+ 
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+ 
+/*ドットナビゲーションの設定*/
+ 
+.slick-dots {
+    text-align:center;
+    margin:20px 0 0 0;
+}
+ 
+.slick-dots li {
+    display:inline-block;
+    margin:0 5px;
+    position: relative;
+}
+ 
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:10px;/*ドットボタンのサイズ*/
+    height:10px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:100%;
+    background:#ccc;/*ドットボタンの色*/
+}
+ 
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+ 
+ 
+/*========= レイアウトのためのCSS ===============*/
+ 
+body{
+  background:#eee;
+}
+ 
+h2,p {
+    text-align:center;
+    padding:20px;
+}
+ 
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+ 
+a{
+  color: #333;
+}
+ 
+a:hover,
+a:active{
+  text-decoration: none;
+}
