@@ -1,0 +1,124 @@
+.back-ground {
+    width: 100%;
+    height: auto;
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/16/21/45/coffee-2319107_1280.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    z-index: -1;
+    
+}
+body {
+    background-color:whitesmoke;
+}
+.cafe{position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding:0;
+        margin:0;
+        font-size:200px;
+        color: chocolate;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+a.btn_02 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid chocolate;
+	background: chocolate;
+	color: cornsilk;
+	transition: 0.5s;
+}
+a.btn_02:hover {
+	color: chocolate;
+	background: rgba(255, 248, 220, 0);}
+    a.btn_02 {
+        position: relative; /* 今の位置を基準 */
+        top: 100px; /*上から10px*/ 
+        left: 700px; /*左から20px*/
+        font-size: 80% 
+}
+
+
+
+
+
+h1 {
+    color: chocolate;
+    font-size: 50px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+h2 {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+li {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+h3 {
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 180%;
+}
+      
+/* <style type="text/css">
+/*=== 画像の表示エリア ================================= */
+/* .slide {
+  position   : relative;
+  overflow   : hidden;
+                    /* 画像のサイズに合わせて変更ください */
+  /* width      : 200px;
+  height     : 200px;
+  margin     : auto;      サンプルは中央寄せの背景：白 */
+  /* background : #fff; */
+/* } */
+ 
+ /*=== 画像の設定 ======================================= */
+/* .slide img {
+  display    : block;
+  position   : absolute;
+                      画像のサイズを表示エリアに合せる
+  width      : inherit;
+  height     : inherit;
+  opacity    : 0;
+  animation  : slideAnime 21s ease infinite; */
+/* } */
+ 
+ /*=== スライドのアニメーションを段差で開始する ========= */
+/* .slide img:nth-of-type(1) { animation-delay: 0s } */
+/* .slide img:nth-of-type(2) { animation-delay: 7s } */
+/* .slide img:nth-of-type(3) { animation-delay: 14s } */
+ 
+ /*=== スライドのアニメーション ========================= */
+/* @keyframes slideAnime{
+   0% { opacity: 0 }
+   5% { opacity: 1 }
+  28% { opacity: 1 }
+  33% { opacity: 0 }
+ 100% { opacity: 0 }
+} */
+/* </style> */  
