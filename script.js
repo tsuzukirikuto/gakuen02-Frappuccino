@@ -4,7 +4,7 @@ console.log(btn_02)
  
 function scrollMenu(){
    
-    window.scroll(0,2050);
+    window.scroll(0,2010);
 }
  
 btn_02.addEventListener("click",scrollMenu);
