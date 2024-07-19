@@ -8,11 +8,14 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     z-index: -1;
+    margin-left: 0%;
+    margin-top: 0%;
 
 }
 body {
     background-color:whitesmoke;
     text-align: center;
+    
 }
 
 
@@ -97,12 +100,12 @@ iframe {
 
 /* ここに CSS のコードを書きましょう */
  
-.yuuki{
+/* .yuuki{
     position: relative; /* 今の位置を基準 */
-    top: -440px; /* 上から10px */
-    left: 750px; /* 左から20px */
-    font-size: 1000%;
-    }
+    /* top: -440px; 上から10px */
+    /* left: 750px; 左から20px */
+    /* font-size: 1000%; */
+    /* } */ 
 .tyuumonn-button{
     width: 500px;
     height: 90px;
@@ -110,8 +113,8 @@ iframe {
  
 ul {
     display: flex;
-    text-align: center;
-  }
+    justify-content: center;
+}
  
  
  
@@ -236,21 +239,21 @@ div{
     background:#ccc;/*ドットボタンの色*/
 }
  
-.slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
-}
+/* .slick-dots .slick-active button{
+    /* background:#333;ドットボタンの現在地表示の色 */
+/* }  */
  
  
 /*========= レイアウトのためのCSS ===============*/
  
-body{
+/* body{
   background:#eee;
-}
+} */
  
-h2,p {
+/* h2,p {
     text-align:center;
     padding:20px;
-}
+} */
  
 ul{
   margin:0;
